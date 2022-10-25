@@ -19,8 +19,6 @@ void oilDesalter::fillMachine()
   {
     saltRemovingMachineEmpty = false;
     oilDesalted = false;
-
-    // fill the boiler with a milk/chocolate mixture
   }
 }
 
@@ -52,9 +50,6 @@ bool oilDesalter::isSaltRemoved() const
 
 oilDesalter& oilDesalter::getInstance()
 {
-  // Note: This so called "lazy initialization" (Meyers' Singleton)
-  // is thread-safe since C++11 and GCC 4.3!
-
   // Singleton object
   static oilDesalter uniqueInstance;
 
